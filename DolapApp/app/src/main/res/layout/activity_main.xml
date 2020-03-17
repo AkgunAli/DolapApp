@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/likecount"
+        android:layout_width="54dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/productname"
+        app:layout_constraintTop_toBottomOf="@+id/heartimage" />
+
+    <TextView
+        android:id="@+id/productprice"
+        android:layout_width="119dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starscount" />
+
+    <ImageView
+        android:id="@+id/productimage"
+        android:layout_width="419dp"
+        android:layout_height="520dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/productmark"
+        android:layout_width="112dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productimage" />
+
+    <TextView
+        android:id="@+id/productname"
+        android:layout_width="152dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/productmark"
+        app:layout_constraintTop_toBottomOf="@+id/productimage" />
+
+    <TextView
+        android:id="@+id/commentcount"
+        android:layout_width="88dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#FDD835"
+        app:layout_constraintStart_toEndOf="@+id/starsimage"
+        app:layout_constraintTop_toBottomOf="@+id/productname" />
+
+    <TextView
+        android:id="@+id/starscount"
+        android:layout_width="50dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#FDD835"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productmark" />
+
+    <ImageView
+        android:id="@+id/heartimage"
+        android:layout_width="24dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productimage"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/heartimage2"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productimage"
+        app:srcCompat="@drawable/circular" />
+
+    <ImageView
+        android:id="@+id/starsimage"
+        android:layout_width="65dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/starscount"
+        app:layout_constraintTop_toBottomOf="@+id/productname"
+        app:srcCompat="@drawable/aastars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
